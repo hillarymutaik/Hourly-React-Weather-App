@@ -1,37 +1,47 @@
-# ⛅️ PWA Weather App made with React
+# React Weather
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
+<img src="https://user-images.githubusercontent.com/25284536/90274607-2535a000-de76-11ea-9d21-ab8c3e68b3a9.png" width="400"> <img src="https://user-images.githubusercontent.com/25284536/90274626-29fa5400-de76-11ea-97a7-c6b67ec2f66a.png" width="400">
 
-<https://weather.iondrimbafilho.me/>
+Weather App built with React.
+[Live Demo](https://esnz-reactweather.netlify.app/)
 
-![build](https://github.com/iondrimba/react-weather-app/workflows/build/badge.svg?branch=main)
-![deploy](https://github.com/iondrimba/react-weather-app/workflows/deploy/badge.svg?branch=main)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/8cd55ce66e034c44f03a/test_coverage)](https://codeclimate.com/github/iondrimba/react-weather-app/test_coverage)
+## Tech Stack
 
-![Demo](https://raw.githubusercontent.com/iondrimba/images/master/weather.gif?raw=true)
+**React, Typescript, Redux, StyledComponents**
 
-## About
+## Features
 
-This is a personal project built in my spare time for learning purposes.
+- **Weather forecast for any city or place**
+- **Extended 7 days forecast**
+- **Find user location weather by utilizing GeolocationAPI**
+- **One-click Celcius to Fahrenheit conversion and vice versa**
+- **Dark Mode**
 
-### APIs
+## Getting Started
 
-* <https://api.ipify.org/?format=json> - IP search
-* <http://api.ipstack.com> - Geolocation based on IP
-* <https://darksky.net/dev> - Forecast based on latitude and longitude
+First you need an API key from OpenWeatherMap, you can get one by creating an account on their website.
+After you got your API key, create a **.env** file at root directory of project, copy the line below to the file and replace YOUR_KEY with your OpenWeatherMap API Key.
 
-#### Features
+```
+REACT_APP_WEATHER_API_KEY=YOUR_KEY
+```
 
-* PWA
-* Responsive
-* Offline ready
-* Installable (add to Homescreen )
-* Swipe gestures
+Finally clone this repository, install dependencies and run the local server
 
-#### Built with
+```bash
+git clone https://github.com/esnz/reactweather.git
+```
 
-* ES6
-* Sass
-* React
-* Jest
-* VSCode
+```bash
+cd reactweather
+npm install
+npm start
+```
+
+## Credits
+
+[OpenWeatherMap](https://openweathermap.org/ 'OpenWeatherMap') (Weather data API)
+
+[Algolia Places](https://community.algolia.com/places/ 'Algolia Places') (Place suggestion API)
+
+[Icons8.com](https://www.icons8.com 'Icons8.com') (Weather icons)
